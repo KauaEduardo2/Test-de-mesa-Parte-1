@@ -1,0 +1,83 @@
+Planilha 1 
+
+using System;
+
+namespace Planilha_1
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            int a = 10;
+            Console.WriteLine("Valor de A: {0} ",a);   
+            int b = 20;
+            Console.WriteLine("Valor de B: {0}",b);
+            int c = (a + b)/2;
+            Console.WriteLine("Valor de c: {0}",c);
+            c = c - 40;
+            Console.WriteLine("Valor de c após c - 40: {0}",c);
+            int[] numeros = new int[100];
+            numeros[3] = a + b + c;
+            Console.WriteLine("Valor de vetor[3]: {0}",numeros[3]);
+        }
+    }
+}
+
+Planilha 2 
+
+
+using System;
+
+namespace Planilha_2
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            int a = 2;
+            int[] vetor = new int[100];
+            while (a < 6)
+            {
+                Console.WriteLine("Valor de A: {0}", a);
+                vetor[a] = 10 * a;
+                Console.WriteLine("Valor do vetor[a]: {0}", vetor[a]);
+                a++;
+                Console.WriteLine("Valor do a após a soma do contador: {0}",a);
+            }
+        }
+    }
+}
+
+
+Planilha 3 
+
+
+using System;
+
+namespace Planilha_3
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            int a = 7;
+            Console.WriteLine("Valor de A:{0}",a);   
+            int b = a - 6;
+            Console.WriteLine("Valor de B fora do laço de repetição: {0}", b);
+            Console.WriteLine(" ");
+            Console.WriteLine("--------------- Dentro do laço de repetição --------------");
+            int[] vetor = new int[100];
+            while (b < a)
+            {
+                vetor[b] = b + a;
+                Console.WriteLine("Valor do vetor[b]: {0}", vetor[b]);
+                b += 2;
+                Console.WriteLine("Valor de B após a soma do contador: {0}", b);
+            }
+        }
+    }
+}
+
+
+
+
